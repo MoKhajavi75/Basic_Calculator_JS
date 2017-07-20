@@ -11,21 +11,35 @@ window.alert("Welcome!");       //welcome msg
 </script>
 </head>
 
-<body>
+<body style="background-color:#E6E6FA">
+<script src="js/funcs.js"></script>
+
 <center>
 <h2>Basic Calculator</h2>
 
-<form action="javascript:calc()">
+<form>
     First Number:<br>
-    <input type="text" name="x">
+    <input type="text" id="first_operand">
     <br>
     Last Name:<br>
-    <input type="text" name="y">
+    <input type="text" id="second_operand">
     <br><br>
-    <input type="submit" value="Calculate it!">
 </form>
+
+<button onclick="calc()">Calculate it!</button>
+
+<br><br>
+<hr><hr>
+<p><b>Sum: </b><p id="sum"></p></p>
+<hr>
+<p><b>Sub: </b><p id="sub"></p></p>
+<hr>
+<p><b>Multi: </b><p id="multi"></p></p>
+<hr>
+<p><b>Div: </b><p id="div"></p></p>
+<hr>
 </center>
 
-<script src="js/funcs.js"></script>
+
 </body>
 </html>
